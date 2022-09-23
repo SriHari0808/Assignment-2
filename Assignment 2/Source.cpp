@@ -15,6 +15,12 @@ struct STUDENT_DATA  //Created a struct STUDENT_DATA that contains the first and
 
 int main()
 {
+#ifdef PRE_RELEASE                                    //checking the application running in standard or pre-release source code
+	cout << "PreRelease is running" << endl;
+#else
+	cout << "Standard version is running" << endl;
+#endif // PRE_RELEASE
+
 	ifstream fin;
 	vector<STUDENT_DATA> student_vector;
 	STUDENT_DATA stud;
