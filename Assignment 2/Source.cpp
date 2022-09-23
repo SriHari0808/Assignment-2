@@ -39,5 +39,11 @@ int main()
 		cout << "Oops! Cannot open StudentData file" << endl;
 	}
 
+#ifdef _DEBUG
+	for (int i = 0; i < student_vector.size(); i++)  //Printing the student data only in debug mode
+	{
+		cout << student_vector[i].fname << " " << student_vector[i].lname << endl;
+	}
+#endif // DEBUG
 	return 0;
 }
