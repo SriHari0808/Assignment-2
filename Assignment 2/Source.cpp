@@ -4,6 +4,7 @@
 #include<string>
 #include<vector>
 #include<sstream>
+#define PRE_RELEASE
 using namespace std;
 
 struct STUDENT_DATA  //Created a struct STUDENT_DATA that contains the first and last names of the students.
